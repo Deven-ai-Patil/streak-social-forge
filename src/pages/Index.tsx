@@ -1,12 +1,27 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { useEffect, useState } from 'react';
+import Hero from '../components/Hero';
+import ProductIntro from '../components/ProductIntro';
+import SocialFeed from '../components/SocialFeed';
+import FinalCTA from '../components/FinalCTA';
+import Navigation from '../components/Navigation';
 
 const Index = () => {
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="bg-[#0B0B0F] text-white overflow-x-hidden">
+      <Navigation />
+      <Hero scrollY={scrollY} />
+      <ProductIntro />
+      <SocialFeed />
+      <FinalCTA />
     </div>
   );
 };
