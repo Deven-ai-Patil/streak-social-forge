@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import Hero from '../components/Hero';
 import ProductIntro from '../components/ProductIntro';
+import StreakExamples from '../components/StreakExamples';
 import SocialFeed from '../components/SocialFeed';
 import FinalCTA from '../components/FinalCTA';
 import Navigation from '../components/Navigation';
@@ -20,6 +21,7 @@ const Index = () => {
       <Navigation />
       <Hero scrollY={scrollY} />
       <ProductIntro />
+      <StreakExamples />
       <SocialFeed />
       <FinalCTA />
     </div>
