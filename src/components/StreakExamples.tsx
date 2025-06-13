@@ -158,7 +158,7 @@ const StreakExamples = () => {
           </p>
           
           <button className="group relative px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300">
-            <span className="relative z-10">Start your streak →</span>
+            <span className="relative z-10">Join the waitlist →</span>
             <div className="absolute inset-0 bg-orange-500 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
           </button>
         </div>
