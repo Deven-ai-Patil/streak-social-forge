@@ -66,11 +66,6 @@ const Hero = ({ scrollY }: HeroProps) => {
         </button>
       </div>
 
-      {/* Bottom left text */}
-      <div className="absolute bottom-8 left-8 text-white/50 text-sm animate-fade-in animation-delay-1500">
-        The wait will be worth it.
-      </div>
-
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-pulse">
         <div className="w-px h-12 bg-gradient-to-b from-white/50 to-transparent"></div>

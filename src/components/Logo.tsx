@@ -1,11 +1,11 @@
 
-import { Flame } from 'lucide-react';
+import { Zap } from 'lucide-react';
 
 const Logo = () => {
   return (
     <div className="flex items-center gap-2 group cursor-pointer">
       <div className="relative">
-        <Flame 
+        <Zap 
           size={24} 
           className="text-orange-500 group-hover:text-orange-400 transition-colors"
         />
