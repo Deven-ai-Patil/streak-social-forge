@@ -1,5 +1,6 @@
 
 import { useEffect, useRef, useState } from 'react';
+import WaitlistForm from './WaitlistForm';
 
 const FinalCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -37,10 +38,7 @@ const FinalCTA = () => {
             No noise. Just focus, community, and compounding effort.
           </p>
           
-          <button className="group relative px-12 py-6 bg-orange-500 text-white font-bold text-lg rounded-full hover:bg-orange-400 transition-all duration-300 hover:scale-105">
-            <span className="relative z-10">Join the waitlist</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </button>
+          <WaitlistForm variant="cta" referralSource="final-cta" />
         </div>
 
         {/* Footer */}

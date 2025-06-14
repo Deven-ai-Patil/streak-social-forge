@@ -1,5 +1,6 @@
 
 import { useEffect, useRef, useState } from 'react';
+import WaitlistForm from './WaitlistForm';
 
 interface HeroProps {
   scrollY: number;
@@ -60,10 +61,9 @@ const Hero = ({ scrollY }: HeroProps) => {
           We're quietly fixing that.
         </p>
         
-        <button className="group relative px-8 py-4 bg-white text-black font-semibold rounded-full hover:bg-orange-500 hover:text-white transition-all duration-300 animate-fade-in animation-delay-1200">
-          <span className="relative z-10">Join the waitlist →</span>
-          <div className="absolute inset-0 bg-orange-500 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300"></div>
-        </button>
+        <div className="animate-fade-in animation-delay-1200">
+          <WaitlistForm variant="hero" referralSource="hero-section" />
+        </div>
       </div>
 
       {/* Scroll indicator */}
