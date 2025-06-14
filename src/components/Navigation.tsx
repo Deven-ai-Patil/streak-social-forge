@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const Navigation = () => {
@@ -20,9 +21,12 @@ const Navigation = () => {
     }`}>
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Logo />
-        <button className="text-white/80 hover:text-white transition-colors text-sm font-medium">
-          Join waitlist →
-        </button>
+        <Link 
+          to="/app" 
+          className="text-white/80 hover:text-white transition-colors text-sm font-medium"
+        >
+          Launch App →
+        </Link>
       </div>
     </nav>
   );
